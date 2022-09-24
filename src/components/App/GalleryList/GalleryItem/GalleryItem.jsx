@@ -1,7 +1,7 @@
 import React from "react";
 
-function GalleryItem () {
-
+function GalleryItem ({item, getGallery}) {
+    
 }
 
 export default GalleryItem;
