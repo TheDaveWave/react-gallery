@@ -30,7 +30,7 @@ function GalleryItem ({item, getGallery}) {
         <div className="gallery-item">
             <div className="display" onClick={() => {setToggle(!togglePic)}}>
                 {togglePic ? 
-                item.description :
+                <p>{item.description}</p> :
                 <img src={item.path} alt="gallery item"/>}
             </div>
             <div>

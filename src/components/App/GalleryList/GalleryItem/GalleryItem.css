@@ -2,4 +2,10 @@
     height: 150px;
     width: 150px;
     border: 1px solid #000;
+
+    text-align: center;
+}
+
+.display p {
+    margin: auto 25%;
 }
