@@ -1,16 +1,29 @@
 .gallery-item {
-    margin: auto 5%;
+    margin: auto 4%;
     margin-top: 2%;
+    border: 1px solid #000;
+    width: 200px;
+    /* height: 200px; */
+    user-select: none;
 }
 
 .display {
     height: 150px;
     width: 150px;
     border: 1px solid #000;
+    margin: auto auto;
 
     text-align: center;
 }
 
 .display p {
-    margin: auto 10%;
+    margin: 20% 10%;
+}
+
+/* .display-banner {
+    width: 150px;
+} */
+
+.display-banner button {
+    margin-top: 5%;
 }

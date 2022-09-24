@@ -33,11 +33,11 @@ function GalleryItem ({item, getGallery}) {
                 <p>{item.description}</p> :
                 <img src={item.path} alt="gallery item"/>}
             </div>
-            <div>
+            <div className="display-banner">
                 {didLike ? 
                 <p>Liked</p> :
                 <button onClick={() => handleClick(item.id)}>Like</button>}
-                <p>{item.likes} people like this!</p>
+                <p>{item.likes === 0 ? 'No people' : item.likes===1 ? `${item.likes} person likes` : `${item.likes} people like`} this!</p>
             </div>
         </div>
     );
