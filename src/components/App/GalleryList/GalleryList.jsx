@@ -3,9 +3,7 @@ import GalleryItem from './GalleryItem/GalleryItem';
 function GalleryList({gallery, getGallery}) {
     return (
         // using a fragment to wrap up following html elements.
-        <div className='gallery-list'>
-            <p>Gallery goes here</p>
-            
+        <div className='gallery-list'>            
             {gallery.map( item => (
                 <GalleryItem
                     key={item.id}
