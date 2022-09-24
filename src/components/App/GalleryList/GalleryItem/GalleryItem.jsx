@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import axios from "axios";
+import './GalleryItem.css';
 
 function GalleryItem ({item, getGallery}) {
     const [togglePic, setToggle] = useState(false);
@@ -27,10 +28,10 @@ function GalleryItem ({item, getGallery}) {
 
     return (
         <div className="gallery-item">
-            <div onClick={() => {setToggle(!togglePic)}}>
+            <div className="display" onClick={() => {setToggle(!togglePic)}}>
                 {togglePic ? 
                 item.description :
-                <img src={item.path}/>}
+                <img src={item.path} alt="gallery item"/>}
             </div>
             <div>
                 {didLike ? 
